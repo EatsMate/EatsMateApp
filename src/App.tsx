@@ -19,7 +19,7 @@ function AppShell() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <MobileLayout>
         <Routes>
           <Route path="/" element={<OnboardingScreen />} />
